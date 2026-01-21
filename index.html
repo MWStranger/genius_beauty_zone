@@ -1,11 +1,216 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Zone</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="#" class="logo">Beauty Zone</a>
+
+          <ul class="nav-list">
+            <li><a href="#intro">Про нас</a></li>
+            <li><a href="#why-us">Чому ми</a></li>
+            <li><a href="#services">Наші процедури</a></li>
+            <li><a href="#conversion">Контакти</a></li>
+          </ul>
+
+          <a href="#">Telephon icon</a>
+          <a href="#">Facebook icon</a>
+          <a href="#">Instagram icon</a>
+
+          <button type="button" class="btn-burger">Х</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <p>Косметологічна клініка</p>
+          <h1>Beauty Zone</h1>
+          <button type="button" class="btn-primary">Замовити дзвінок</button>
+          <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+        </div>
+      </section>
+
+      <!-- Intro -->
+      <section class="intro" id="intro">
+        <div class="container">
+          <h2>Перевтілюйтесь у Beauty Zone</h2>
+
+          <div class="intro-content">
+            <p>
+              Наша косметологічна клініка пропонує вам професійні послуги з
+              догляду за шкірою обличчя та тіла.
+            </p>
+            <p>
+              B beauty zone ми гарантуємо найвищі стандарти якості та приємний
+              сервіс. Наші косметологічні процедури та препарати допоможуть вам
+              підтримувати свою красу та молодість. З нами краса назавжди!
+            </p>
+          </div>
+
+          <div class="intro-results">
+            <!-- Фото / before-after / social proof -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Why us -->
+      <section class="why-us" id="why-us">
+        <div class="container">
+          <h2>Чому люди обирають нас</h2>
+
+          <ul class="benefits-list">
+            <li class="benefit-item">
+              <a href="#">X</a>
+              <p>
+                Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                від 5 років
+              </p>
+            </li>
+
+            <li class="benefit-item">
+              <a href="#">X</a>
+              <p>
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
+            </li>
+
+            <li class="benefit-item">
+              <a href="#">X</a>
+              <p>
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2>Наші послуги</h2>
+
+          <ul class="services-list">
+            <li class="service-card">
+              <h3>Масаж обличчя</h3>
+            </li>
+
+            <li class="service-card">
+              <h3>Інʼєкційні процедури</h3>
+            </li>
+
+            <li class="service-card">
+              <h3>Догляд за шкірою</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Conversion -->
+      <section class="conversion" id="conversion">
+        <div class="container">
+          <h2>Як нас знайти та записатися</h2>
+
+          <div class="conversion-content">
+            <div class="map">
+              <!-- карта -->
+            </div>
+
+            <form class="appointment-form">
+              <input type="text" name="name" placeholder="Ваше імʼя" required />
+              <input type="tel" name="phone" placeholder="Телефон" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Електронна пошта"
+                required
+              />
+              <button type="submit" class="btn-primary">
+                Записатись безкоштовно
+              </button>
+              <p>
+                Натискаючи на кнопку я погоджуюсь з
+                <a href="#">політикою конфіденційності</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <a href="#" class="logo">Beauty Zone</a>
+
+          <ul class="footer-menu">
+            <li><a href="#intro">Про нас</a></li>
+            <li><a href="#why-us">Чому ми</a></li>
+            <li><a href="#services">Наші процедури</a></li>
+            <li><a href="#conversion">Контакти</a></li>
+          </ul>
+
+          <address class="footer-address">
+            <div class="footer-address-contacts">
+              <ul class="footer-address-list">
+                <li>
+                  <a class="footer-address-link" href="tel:+380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer-address-link"
+                    href="mailto:beautyzone@gmail.com"
+                    >beautyzone@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-address-link" href="#" target="_blank">
+                    Україна, м. Київ, вул. Тараса Шевченка 5
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </address>
+          <div>
+            <a href="">
+              <svg class="footer-adress-icon" width="32" height="32">
+                <use href="#"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="footer-adress-icon" width="32" height="32">
+                <use href="#"></use>
+              </svg>
+            </a>
+            <a href="">
+              <svg class="footer-adress-icon" width="32" height="32">
+                <use href="#"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-address-info">
+            <a class="footer-address-link" href="#" target="_blank">
+              Політика конфіденційності
+            </a>
+            <p class="footer-address-copyright">&copy; 2022 Дані захищені</p>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>

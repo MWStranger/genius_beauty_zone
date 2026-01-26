@@ -1,0 +1,56 @@
+@use '../utils/variables' as *;
+
+/* HEADER */
+.header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 16px;
+
+  @media screen and (min-width: $bp--desktop) {
+    padding-top: 32px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav {
+    height: 42px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp--desktop) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+    fill: var(--color-primary-light);
+
+    @media screen and (min-width: $bp--desktop) {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

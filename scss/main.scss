@@ -21,9 +21,9 @@
 
 // /** sections **/
 // /* спочатку основні стилі для секцій */
-// @import './layauts/section'; /* SECTION - секції сайту */
+@use './layauts/section' as *; /* SECTION - секції сайту */
 // /* потім стилі для конкретних секцій */
-// @import './layauts/header'; /* HEADER - шапка сайту */
+@use './layauts/header' as *; /* HEADER - шапка сайту */
 // @import './layauts/hero-section'; /* HERO SECTION - секція сайту */
 // @import './layauts/advantages-section'; /* ADVANTAGES SECTION - секція сайту */
 // @import './layauts/traditions-section'; /* TRADITIONS SECTION - секція сайту */

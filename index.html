@@ -15,22 +15,89 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a href="#" class="logo">Beauty Zone</a>
-
-          <ul class="nav-list">
-            <li><a href="#intro">Про нас</a></li>
-            <li><a href="#why-us">Чому ми</a></li>
-            <li><a href="#services">Наші процедури</a></li>
-            <li><a href="#conversion">Контакти</a></li>
-          </ul>
-
-          <a href="#">Telephon icon</a>
-          <a href="#">Facebook icon</a>
-          <a href="#">Instagram icon</a>
-
-          <button type="button" class="btn-burger">Х</button>
-        </nav>
+        <div class="header__container">
+          <!-- Navigation -->
+          <nav class="header__nav">
+            <!-- logo and menu -->
+            <a href="/">
+              <img src="./images/logo.webp" alt="Логотип Beauty Zone" />
+            </a>
+            <ul class="header__menu">
+              <li>
+                <a class="link" href="#intro-section">Про нас</a>
+              </li>
+              <li><a class="link" href="#why-us-section">Чому ми</a></li>
+              <li>
+                <a class="link" href="#services-section">Наші процедури</a>
+              </li>
+              <li><a class="link" href="#conversion-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <!-- Meta info: phone, social icons, burger -->
+          <div class="header__meta">
+            <a href="#">X</a>
+            <a href="#">X</a>
+            <a href="#">X</a>
+            <button
+              class="header__burger js-action"
+              type="button"
+              data-action="menu"
+            >
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- Mobile menu toggle -->
+          <!-- <div class="mobile-menu is-hidden">
+            <button
+              class="mobile-menu__btn-close js-action"
+              type="button"
+              data-action="menu"
+            >
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__list">
+              <li>
+                <a
+                  class="mobile-menu__link js-action"
+                  data-action="menu"
+                  href="#traditions-section"
+                >
+                  Наші традиції
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mobile-menu__link js-action"
+                  data-action="menu"
+                  href="#chefs-section"
+                >
+                  Шеф-кухарі
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mobile-menu__link js-action"
+                  data-action="menu"
+                  href="#formats-section"
+                  >Формати</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-menu__link js-action"
+                  data-action="menu"
+                  href="#contact-section"
+                >
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
       </div>
     </header>
 

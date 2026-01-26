@@ -1,0 +1,79 @@
+/* BASE */
+
+@use './utils/variables' as *;
+
+/* Set box-sizing for all elements */
+/* Apply a natural box layout model to all elements, but allowing components to change */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset default margin and padding for all elements */
+body {
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-main);
+  font-family: 'Play', sans-serif;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+
+  @media screen and (min-width: $bp--tablet) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+/* Block page scrolling when adding the is-locked class to the body */
+body.is-locked {
+  overflow: hidden;
+}
+
+/* Remove indentation for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  font-family: 'Play', sans-serif;
+}
+
+/* General styles for links */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* General styles for address */
+address {
+  font-style: normal;
+}
+
+/* General styles for lists */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* General styles for images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* General styles for containers */
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}

@@ -1,0 +1,18 @@
+/* VARIABLES */
+:root {
+  /* Primary Colors */
+  --color-primary-main: #ffffff;
+  --color-primary-accent: #2b7fff;
+  --color-primary-dark: #011c44;
+
+  /* Secondary Colors */
+  --color-secondary-weak: #747272;
+  --color-secondary-strong: #4a4a4a;
+  --color-secondary-dark: #011f4a;
+  --color-secondary-accent: #ffd02b;
+}
+
+/* Breakpoints */
+$bp--mobile: 480px;
+$bp--tablet: 768px;
+$bp--desktop: 1280px;

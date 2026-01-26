@@ -1,0 +1,35 @@
+/* IMPORTS */
+/* Correct import structure set up: variables, fonts, base, utilities, sections */
+
+/* utils */
+/* Write them first - otherwise SASS won't find the variable, etc.*/
+@use './utils/variables' as *; /* VARIABLES - змінні */
+@use './utils/fonts' as *; /* FONTS - шрифти */
+@use './utils/texts' as *; /* TEXTS - стилі тексту */
+@use './utils/utils' as *; /* UTILS - утіліти */
+
+/* base */
+@use './base' as *; /* BASE - базові стилі */
+
+/* components */
+// @import './components/buttons'; /* BUTTONS - кнопки */
+// @import './components/cards'; /* CARDS - картки*/
+// @import './components/form-terms'; /* FORM-TERMS - умови форми*/
+// @import './components/inputs'; /* INPUTS - посилання */
+// @import './components/links'; /* LNKS - посилання */
+// @import './components/pagination'; /* PAGINATION - пагінація */
+
+// /** sections **/
+// /* спочатку основні стилі для секцій */
+// @import './layauts/section'; /* SECTION - секції сайту */
+// /* потім стилі для конкретних секцій */
+// @import './layauts/header'; /* HEADER - шапка сайту */
+// @import './layauts/hero-section'; /* HERO SECTION - секція сайту */
+// @import './layauts/advantages-section'; /* ADVANTAGES SECTION - секція сайту */
+// @import './layauts/traditions-section'; /* TRADITIONS SECTION - секція сайту */
+// @import './layauts/chefs-section'; /* CHEFS SECTION - секція сайту */
+// @import './layauts/formats-section'; /* FORMATS SECTION - секція сайту */
+// @import './layauts/contact-section'; /* CONTACT SECTION - секція сайту */
+// @import './layauts/mobile-menu'; /* MOBILE MENU - мобільне меню */
+// @import './layauts/modal'; /* MODALS - модальне вікно */
+// @import './layauts/footer'; /* FOOTER - футер сайту */

@@ -1,0 +1,20 @@
+@use '../utils' as *;
+
+/* BUTTON */
+/* Button styles */
+.button {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 32px;
+  background: var(--color-primary-accent);
+  color: var(--color-primary-main);
+  border: 2px solid var(--color-primary-accent);
+  border-radius: 32px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-main);
+  color: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-accent);
+}

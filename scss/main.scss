@@ -1,18 +1,20 @@
 /* IMPORTS */
 /* Correct import structure set up: variables, fonts, base, utilities, sections */
 
+/* utils/_index.scss */
+@forward './utils/variables';
+
 /* utils */
 /* Write them first - otherwise SASS won't find the variable, etc.*/
-@use './utils/variables' as *; /* VARIABLES - змінні */
-@use './utils/fonts' as *; /* FONTS - шрифти */
-@use './utils/texts' as *; /* TEXTS - стилі тексту */
-@use './utils/utils' as *; /* UTILS - утіліти */
+@use './utils/fonts' as *;
+@use './utils/texts' as *;
+@use './utils/utils' as *;
 
 /* base */
-@use './base' as *; /* BASE - базові стилі */
+@use './base' as *;
 
 /* components */
-// @import './components/buttons'; /* BUTTONS - кнопки */
+@use './components/buttons' as *;
 // @import './components/cards'; /* CARDS - картки*/
 // @import './components/form-terms'; /* FORM-TERMS - умови форми*/
 // @import './components/inputs'; /* INPUTS - посилання */
@@ -20,11 +22,12 @@
 // @import './components/pagination'; /* PAGINATION - пагінація */
 
 // /** sections **/
-// /* спочатку основні стилі для секцій */
-@use './layauts/section' as *; /* SECTION - секції сайту */
-// /* потім стилі для конкретних секцій */
-@use './layauts/header' as *; /* HEADER - шапка сайту */
-// @import './layauts/hero-section'; /* HERO SECTION - секція сайту */
+// /* main layout styles */
+@use './layauts/section' as *;
+// /* extra styles for specific sections */
+@use './layauts/header' as *;
+@use './layauts/hero-section' as *;
+@use './layauts/intro-section' as *;
 // @import './layauts/advantages-section'; /* ADVANTAGES SECTION - секція сайту */
 // @import './layauts/traditions-section'; /* TRADITIONS SECTION - секція сайту */
 // @import './layauts/chefs-section'; /* CHEFS SECTION - секція сайту */

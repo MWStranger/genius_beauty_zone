@@ -103,21 +103,26 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero">
-        <div class="container">
+      <section class="hero-section">
+        <div class="container hero-section__container">
           <p>Косметологічна клініка</p>
-          <h1>Beauty Zone</h1>
-          <button type="button" class="btn-primary">Замовити дзвінок</button>
-          <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+          <h1 class="hero-section__title">Beauty Zone</h1>
+          <button type="button" class="button hero-section__button btn-primary">
+            Замовити дзвінок
+          </button>
+          <div class="hero-section__text">
+            <p>
+              Запишись та отримай безкоштовну консультацію нашого косметолога
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Intro -->
-      <section class="intro" id="intro">
-        <div class="container">
-          <h2>Перевтілюйтесь у Beauty Zone</h2>
-
-          <div class="intro-content">
+      <section class="intro-section" id="intro">
+        <div class="container intro-section__container">
+          <div class="intro-section__content">
+            <h2>Перевтілюйтесь у Beauty Zone</h2>
             <p>
               Наша косметологічна клініка пропонує вам професійні послуги з
               догляду за шкірою обличчя та тіла.
@@ -128,9 +133,33 @@
               підтримувати свою красу та молодість. З нами краса назавжди!
             </p>
           </div>
-
-          <div class="intro-results">
-            <!-- Фото / before-after / social proof -->
+          <div class="intro-section__results">
+            <div class="intro-section__img-circle">
+              <img
+                src="./images/intro-section.jpg"
+                alt="before the operation"
+              />
+            </div>
+            <div
+              class="intro-section__img-circle intro-section__img-circle--after"
+            >
+              <img src="./images/intro-section.jpg" alt="after the operation" />
+            </div>
+            <div class="intro-section__decor-layer">
+              <div class="star-icon star-icon--blue">
+                <svg
+                  viewBox="0 0 100 100"
+                  width="150"
+                  height="150"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    class="star-shape"
+                    points="50,5 55,45 95,50 55,55 50,95 45,55 5,50 45,45"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </section>

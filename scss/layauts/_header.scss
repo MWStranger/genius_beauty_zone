@@ -1,4 +1,4 @@
-@use '../utils/variables' as *;
+@use '../utils' as *;
 
 /* HEADER */
 .header {
@@ -6,15 +6,15 @@
   top: 0px;
   left: 0px;
   width: 100%;
-  padding-top: 16px;
 
-  @media screen and (min-width: $bp--desktop) {
-    padding-top: 32px;
-  }
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
   &__container {
     display: flex;
     align-items: center;
+    height: 106px;
     gap: 40px;
   }
 

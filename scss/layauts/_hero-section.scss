@@ -1,0 +1,64 @@
+@use '../utils' as *;
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: var(--color-primary-dark);
+  padding: 124px 0px;
+  background-image:
+    linear-gradient(
+      89.38deg,
+      #ffffff 30.62%,
+      rgba(255, 255, 255, 0.850898) 41.31%,
+      rgba(255, 255, 255, 0.193204) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url(../images/hero-section-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  @media screen and (min-width: $bp--desktop) {
+    padding: 272px 0px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(
+        89.38deg,
+        #ffffff 30.62%,
+        rgba(255, 255, 255, 0.850898) 41.31%,
+        rgba(255, 255, 255, 0.193204) 58.65%,
+        rgba(255, 255, 255, 0) 72.78%
+      ),
+      url(../images/hero-section-background@2x.jpg);
+  }
+
+  &__container {
+    width: 50%;
+    margin: 0px 106px;
+  }
+
+  &__title {
+    color: var(--color-primary-accent);
+    font-size: 54px;
+    line-height: 1;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp--desktop) {
+      font-size: 140px;
+      line-height: 0.8;
+    }
+  }
+
+  &__text {
+    width: 30%;
+    font-size: 12px;
+    margin: 15px 10px;
+  }
+}

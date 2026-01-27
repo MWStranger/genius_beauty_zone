@@ -1,0 +1,61 @@
+@use '../utils' as *;
+
+/* INTRO SECTION */
+.intro-section {
+  &__container {
+    display: flex;
+
+    @media screen and (min-width: $bp--tablet) {
+    }
+
+    @media screen and (min-width: $bp--desktop) {
+    }
+  }
+
+  &__results {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-width: 500px;
+  }
+
+  &__img-circle {
+    display: none;
+    position: relative;
+    width: 328px;
+    height: 328px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    @media screen and (min-width: $bp--tablet) {
+      display: block;
+      align-self: flex-start;
+    }
+
+    img {
+      position: absolute;
+      top: 50px;
+      left: 170px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transform: scale(2.1);
+    }
+
+    &--after {
+      align-self: flex-end;
+
+      img {
+        top: 40px;
+        left: -175px;
+      }
+    }
+  }
+
+  &__decor-layer {
+    .star-icon {
+      fill: rgb(16, 167, 222);
+    }
+  }
+}

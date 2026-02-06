@@ -4,6 +4,7 @@
 .intro-section {
   &__container {
     display: flex;
+    justify-content: space-between;
 
     @media screen and (min-width: $bp--tablet) {
     }
@@ -12,11 +13,71 @@
     }
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp--tablet) {
+      padding: 40px 30px 40px 0px;
+      max-width: 600px;
+    }
+
+    @media screen and (min-width: $bp--desktop) {
+    }
+
+    h2 {
+      padding-top: 50px;
+    }
+
+    .text-brand {
+      color: var(--color-primary-accent);
+    }
+  }
+
   &__results {
     display: flex;
     flex-direction: column;
     gap: 40px;
     min-width: 500px;
+    position: relative;
+
+    .star-icon {
+      position: absolute;
+      fill: rgb(16, 167, 222);
+    }
+
+    .star-icon--large {
+      top: 340px;
+      left: 130px;
+      svg {
+        width: 64px;
+        height: 64px;
+        transform: rotate(-25deg);
+        fill: var(--color-secondary-dark);
+      }
+    }
+
+    .star-icon--medium {
+      top: 60px;
+      right: 20px;
+      svg {
+        width: 40px;
+        height: 40px;
+        transform: rotate(25deg);
+        fill: var(--color-primary-accent);
+      }
+    }
+
+    .star-icon--small {
+      top: 270px;
+      right: 70px;
+      svg {
+        width: 16px;
+        height: 16px;
+        transform: rotate(-15deg);
+        fill: var(--color-secondary-weak);
+      }
+    }
   }
 
   &__img-circle {
@@ -50,12 +111,6 @@
         top: 40px;
         left: -175px;
       }
-    }
-  }
-
-  &__decor-layer {
-    .star-icon {
-      fill: rgb(16, 167, 222);
     }
   }
 }

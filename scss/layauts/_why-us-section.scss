@@ -1,0 +1,33 @@
+@use '../utils' as *;
+
+/* WHY US SECTION - секція сайту */
+.why-us-section {
+  &__container {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    width: 320px;
+    background-color: darkgray; /* Placeholder color */
+    border-radius: 32px;
+    text-align: center;
+  }
+
+  &__icon {
+  }
+}

@@ -54,6 +54,11 @@ h2 {
   }
 }
 
+/* General styles for text elements */
+.text-brand {
+  color: var(--color-primary-accent);
+}
+
 /* General styles for links */
 a {
   display: inline-block;
@@ -85,6 +90,6 @@ img {
 .container {
   width: 100%;
   max-width: 1288px;
-  margin: 0 auto;
-  padding: 0 24px;
+  margin: 0px 100px;
+  padding: 0px;
 }

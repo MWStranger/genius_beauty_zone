@@ -2,11 +2,12 @@
 
 /* HEADER */
 .header {
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
-
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

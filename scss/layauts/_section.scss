@@ -3,10 +3,10 @@
 /* SECTION */
 /* Styles for all sections */
 .section {
-  padding: 24px 0px;
+  padding: 0px;
 
   @media screen and (min-width: $bp--tablet) {
-    padding: 48px 0px;
+    padding-bottom: 96px;
   }
 
   &__title {

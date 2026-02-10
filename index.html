@@ -117,15 +117,6 @@
             </p>
           </div>
         </div>
-        <!-- <svg
-          class="hero-section__background"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          width="1849"
-          height="1785"
-        >
-          <use href="./images/icons/background.svg"></use>
-        </svg> -->
       </section>
 
       <!-- Intro -->
@@ -254,32 +245,40 @@
             </li>
           </ul>
         </div>
-        <svg
-          class="why-us-section__background"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-          width="1849"
-          height="1785"
-        >
-          <use href="./images/icons/background.svg"></use>
+        <svg class="why-us-section__background" width="1849" height="1785">
+          <use href="./images/background.svg"></use>
         </svg>
       </section>
 
       <!-- Services -->
       <section class="services-section section">
-        <div class="container">
-          <h2>Наші послуги</h2>
-
-          <ul class="services-list">
-            <li class="service-card">
-              <h3>Масаж обличчя</h3>
+        <div class="container services-section__container">
+          <h2 class="services-section__title">
+            Наші <span class="text-brand">процедури</span>
+          </h2>
+          <ul class="services-section__list">
+            <li class="services-section__item">
+              <img
+                class="services-section__image"
+                src="./images/procedure-00.jpg"
+                alt="Маски для обличчя"
+              />
+              <h3>Маски для обличчя</h3>
             </li>
-
-            <li class="service-card">
+            <li class="services-section__item">
+              <img
+                class="services-section__image"
+                src="./images/procedure-01.jpg"
+                alt="Інʼєкційні процедури"
+              />
               <h3>Інʼєкційні процедури</h3>
             </li>
-
-            <li class="service-card">
+            <li class="services-section__item">
+              <img
+                class="services-section__image"
+                src="./images/procedure-02.jpg"
+                alt="Догляд за шкірою"
+              />
               <h3>Догляд за шкірою</h3>
             </li>
           </ul>
@@ -292,9 +291,7 @@
           <h2>Як нас знайти та записатися</h2>
 
           <div class="conversion-content">
-            <div class="map">
-              <!-- карта -->
-            </div>
+            <div class="map"></div>
 
             <form class="appointment-form">
               <input type="text" name="name" placeholder="Ваше імʼя" required />
@@ -319,7 +316,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <nav class="footer-nav">
           <a href="#" class="logo">Beauty Zone</a>
@@ -380,6 +377,6 @@
           </div>
         </nav>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

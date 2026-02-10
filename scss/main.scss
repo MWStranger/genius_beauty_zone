@@ -29,11 +29,7 @@
 @use './layauts/hero-section' as *;
 @use './layauts/intro-section' as *;
 @use './layauts/why-us-section' as *;
-// @import './layauts/advantages-section'; /* ADVANTAGES SECTION - секція сайту */
-// @import './layauts/traditions-section'; /* TRADITIONS SECTION - секція сайту */
-// @import './layauts/chefs-section'; /* CHEFS SECTION - секція сайту */
-// @import './layauts/formats-section'; /* FORMATS SECTION - секція сайту */
-// @import './layauts/contact-section'; /* CONTACT SECTION - секція сайту */
+@use './layauts/services-section' as *;
 // @import './layauts/mobile-menu'; /* MOBILE MENU - мобільне меню */
 // @import './layauts/modal'; /* MODALS - модальне вікно */
 // @import './layauts/footer'; /* FOOTER - футер сайту */

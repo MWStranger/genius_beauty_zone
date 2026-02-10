@@ -2,6 +2,7 @@
 
 /* HERO SECTION */
 .hero-section {
+  // position: relative;
   display: flex;
   align-items: center;
   min-height: 100vh;
@@ -59,5 +60,12 @@
   &__text {
     font-size: 12px;
     margin: 15px 10px;
+  }
+
+  &__background {
+    position: absolute;
+    top: -1033px;
+    left: -380px;
+    rotate: 177deg;
   }
 }

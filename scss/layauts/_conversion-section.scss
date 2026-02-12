@@ -1,0 +1,43 @@
+@use '../utils' as *;
+
+/* SERVICES SECTION - секція сайту */
+.conversion-section {
+  &__container {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__map {
+    flex: 1;
+    @media screen and (min-width: $bp--tablet) {
+      border-radius: 32px;
+    }
+  }
+
+  &__form {
+    border-radius: 32px;
+    min-width: 320px;
+    height: 480px;
+    background-color: var(--color-primary-dark);
+    @media screen and (min-width: $bp--tablet) {
+      width: 420px;
+    }
+  }
+
+  &__form-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-primary-main);
+    margin-bottom: 32px;
+  }
+}

@@ -287,27 +287,77 @@
 
       <!-- Conversion -->
       <section class="conversion-section section">
-        <div class="container">
-          <h2>Як нас <span class="text-brand">знайти</span></h2>
-
-          <div class="conversion-content">
-            <div class="map"></div>
-
-            <form class="appointment-form">
-              <input type="text" name="name" placeholder="Ваше імʼя" required />
-              <input type="tel" name="phone" placeholder="Телефон" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Електронна пошта"
-                required
-              />
-              <button type="submit" class="btn-primary">
+        <div class="container conversion-section__container">
+          <h2 class="conversion-section__title">
+            Як нас <span class="text-brand">знайти</span>
+          </h2>
+          <div class="conversion-section__content">
+            <iframe
+              class="conversion-section__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.5191147494193!2d30.77290462784853!3d50.505907198937884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2ses!4v1770926167088!5m2!1suk!2ses"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <form
+              class="conversion-section__form"
+              name="conversion-section__form"
+              autocomplete="on"
+            >
+              <div class="conversion-section__form-field input">
+                <h2 class="conversion-section__form-title">
+                  Запишіться <span class="text-brand">безкоштовно</span> та
+                  отримайте подарунок
+                </h2>
+                <label class="input__label visually-hidden" for="user-name">
+                  Ім'я
+                </label>
+                <input
+                  class="input__control"
+                  id="user-name"
+                  type="text"
+                  name="user-name"
+                  placeholder="Ваше ім'я та прізвище"
+                  required
+                />
+              </div>
+              <div class="conversion-section__form-field input">
+                <label class="input__label visually-hidden" for="user-phone">
+                  Телефон
+                </label>
+                <input
+                  class="input__control"
+                  id="user-phone"
+                  type="tel"
+                  name="user-phone"
+                  placeholder="Ваш номер телефону"
+                  pattern="^\+[0-9]{12}$"
+                  required
+                />
+              </div>
+              <div class="conversion-section__form-field input">
+                <label class="input__label visually-hidden" for="user-email">
+                  Електронна пошта
+                </label>
+                <input
+                  class="input__control"
+                  id="user-email"
+                  type="email"
+                  name="user-email"
+                  placeholder="Ваша електронна пошта"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  required
+                />
+              </div>
+              <button class="conversion-section__button button" type="submit">
                 Записатись безкоштовно
               </button>
-              <p>
-                Натискаючи на кнопку я погоджуюсь з
-                <a href="#">політикою конфіденційності</a>
+              <p class="form-terms">
+                Натискаючи на кнопку я погоджуюсь з<br />
+                <a class="form-terms-link" href="#">
+                  політикою конфіденційності
+                </a>
               </p>
             </form>
           </div>
@@ -316,7 +366,7 @@
     </main>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <nav class="footer-nav">
           <a href="#" class="logo">Beauty Zone</a>
@@ -377,6 +427,6 @@
           </div>
         </nav>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

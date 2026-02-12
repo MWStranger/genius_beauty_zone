@@ -23,13 +23,14 @@
 
 // /** sections **/
 // /* main layout styles */
-@use './layauts/section' as *;
+@use './layauts/sections' as *;
 // /* extra styles for specific sections */
 @use './layauts/header' as *;
 @use './layauts/hero-section' as *;
 @use './layauts/intro-section' as *;
 @use './layauts/why-us-section' as *;
 @use './layauts/services-section' as *;
+@use './layauts/conversion-section' as *;
 // @import './layauts/mobile-menu'; /* MOBILE MENU - мобільне меню */
 // @import './layauts/modal'; /* MODALS - модальне вікно */
 // @import './layauts/footer'; /* FOOTER - футер сайту */

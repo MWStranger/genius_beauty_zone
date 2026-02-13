@@ -23,21 +23,4 @@
       border-radius: 32px;
     }
   }
-
-  &__form {
-    border-radius: 32px;
-    min-width: 320px;
-    height: 480px;
-    background-color: var(--color-primary-dark);
-    @media screen and (min-width: $bp--tablet) {
-      width: 420px;
-    }
-  }
-
-  &__form-title {
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--color-primary-main);
-    margin-bottom: 32px;
-  }
 }

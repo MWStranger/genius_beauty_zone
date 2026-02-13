@@ -1,0 +1,35 @@
+@use '../utils' as *;
+
+/* INPUTS */
+.input {
+  &__label {
+    display: block;
+  }
+
+  &__control {
+    margin: 8px 0px;
+    padding: 16px 42px;
+    width: 312px;
+    border: 2px solid var(--color-secondary-weak);
+    border-radius: 32px;
+    background-color: transparent;
+    font-style: 16px;
+    line-height: 1.17;
+    outline: none;
+
+    &:hover {
+      border: 1px solid var(--color-brand-normal);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-primary-main);
+      font-style: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
+}

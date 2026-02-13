@@ -15,9 +15,10 @@
 
 /* components */
 @use './components/buttons' as *;
+@use './components/forms' as *;
+@use './components/inputs' as *;
 // @import './components/cards'; /* CARDS - картки*/
 // @import './components/form-terms'; /* FORM-TERMS - умови форми*/
-// @import './components/inputs'; /* INPUTS - посилання */
 // @import './components/links'; /* LNKS - посилання */
 // @import './components/pagination'; /* PAGINATION - пагінація */
 
@@ -31,6 +32,7 @@
 @use './layauts/why-us-section' as *;
 @use './layauts/services-section' as *;
 @use './layauts/conversion-section' as *;
+@use './layauts/footer' as *;
 // @import './layauts/mobile-menu'; /* MOBILE MENU - мобільне меню */
 // @import './layauts/modal'; /* MODALS - модальне вікно */
 // @import './layauts/footer'; /* FOOTER - футер сайту */

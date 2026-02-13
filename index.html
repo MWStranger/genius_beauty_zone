@@ -245,7 +245,7 @@
             </li>
           </ul>
         </div>
-        <svg class="why-us-section__background" width="1849" height="1785">
+        <svg class="why-us-section__background" height="1785">
           <use href="./images/background.svg"></use>
         </svg>
       </section>
@@ -301,15 +301,15 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <form
-              class="conversion-section__form"
+              class="conversion-section__form call-form"
               name="conversion-section__form"
               autocomplete="on"
             >
+              <h2 class="conversion-section__form-title call-form__title">
+                Запишіться <span class="text-brand">безкоштовно</span><br />
+                та отримайте подарунок
+              </h2>
               <div class="conversion-section__form-field input">
-                <h2 class="conversion-section__form-title">
-                  Запишіться <span class="text-brand">безкоштовно</span> та
-                  отримайте подарунок
-                </h2>
                 <label class="input__label visually-hidden" for="user-name">
                   Ім'я
                 </label>
@@ -350,12 +350,15 @@
                   required
                 />
               </div>
-              <button class="conversion-section__button button" type="submit">
+              <button
+                class="conversion-section__button call-form__button button"
+                type="submit"
+              >
                 Записатись безкоштовно
               </button>
-              <p class="form-terms">
+              <p class="call-form__terms">
                 Натискаючи на кнопку я погоджуюсь з<br />
-                <a class="form-terms-link" href="#">
+                <a class="call-form__terms-link" href="#">
                   політикою конфіденційності
                 </a>
               </p>
@@ -367,41 +370,43 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <nav class="footer-nav">
-          <a href="#" class="logo">Beauty Zone</a>
+      <div class="container footer__container">
+        <nav class="footer__nav">
+          <a href="/" class="footer__logo">
+            <img src="./images/logo.webp" alt="Логотип Beauty Zone" />
+          </a>
 
-          <ul class="footer-menu">
+          <ul class="footer__menu">
             <li><a href="#intro">Про нас</a></li>
             <li><a href="#why-us">Чому ми</a></li>
             <li><a href="#services">Наші процедури</a></li>
             <li><a href="#conversion">Контакти</a></li>
           </ul>
-
-          <address class="footer-address">
-            <div class="footer-address-contacts">
-              <ul class="footer-address-list">
-                <li>
-                  <a class="footer-address-link" href="tel:+380960000007"
-                    >+ 38 (096) 000 00 07</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="footer-address-link"
-                    href="mailto:beautyzone@gmail.com"
-                    >beautyzone@gmail.com</a
-                  >
-                </li>
-                <li>
-                  <a class="footer-address-link" href="#" target="_blank">
-                    Україна, м. Київ, вул. Тараса Шевченка 5
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </address>
-          <div>
+        </nav>
+        <address class="footer__address">
+          <div class="footer__address-contacts">
+            <ul class="footer__address-list">
+              <li>
+                <a class="footer__address-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__address-link"
+                  href="mailto:beautyzone@gmail.com"
+                  >beautyzone@gmail.com</a
+                >
+              </li>
+              <li>
+                <a class="footer__address-link" href="#" target="_blank">
+                  Україна, м. Київ,<br />
+                  вул. Тараса Шевченка 5
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__address-icons">
             <a href="">
               <svg class="footer-adress-icon" width="32" height="32">
                 <use href="#"></use>
@@ -419,13 +424,13 @@
             </a>
           </div>
 
-          <div class="footer-address-info">
-            <a class="footer-address-link" href="#" target="_blank">
+          <div class="footer__copyright">
+            <a class="footer__copyright-link" href="#" target="_blank">
               Політика конфіденційності
             </a>
-            <p class="footer-address-copyright">&copy; 2022 Дані захищені</p>
+            <p class="footer__copyright-text">&copy; 2022 Дані захищені</p>
           </div>
-        </nav>
+        </address>
       </div>
     </footer>
   </body>

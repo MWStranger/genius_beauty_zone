@@ -1,0 +1,55 @@
+@use '../utils' as *;
+
+/* FOOTER */
+.footer {
+  background-color: var(--color-primary-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-primary-main);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 0px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  &__logo {
+    flex-grow: 1;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+  }
+
+  &__address {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+  }
+
+  &__address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__copyright-text {
+    color: var(--color-secondary-weak);
+  }
+}

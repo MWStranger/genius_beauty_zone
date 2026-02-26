@@ -2,15 +2,27 @@
 
 /* FOOTER */
 .footer {
+  position: relative;
   background-color: var(--color-primary-dark);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: var(--color-primary-main);
 
+  &::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 247px;
+    height: 152px;
+    bottom: 0px;
+    right: 0px;
+    background-image: url('../images/medicine.webp');
+    content: '';
+  }
+
   &__container {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     padding: 56px 0px;
   }
@@ -37,10 +49,27 @@
     flex-basis: 50%;
   }
 
+  &__address-contacts {
+    margin-bottom: 16px;
+  }
+
   &__address-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  &__icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  &__address-icon {
+    color: var(--color-primary-main);
+    width: 32px;
+    height: 32px;
   }
 
   &__copyright {

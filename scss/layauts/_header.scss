@@ -3,17 +3,21 @@
 /* HEADER */
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  @media screen and (min-width: $bp--tablet) {
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
 
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 106px;
     gap: 40px;
@@ -21,11 +25,20 @@
 
   &__nav {
     height: 42px;
-    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
+    @media screen and (min-width: $bp--tablet) {
+      flex-grow: 1;
+    }
+  }
+
+  &__logo {
+    height: 42px;
+    @media screen and (min-width: $bp--tablet) {
+      flex-grow: 1;
+    }
   }
 
   &__menu {
@@ -39,15 +52,41 @@
     }
   }
 
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__icon-list {
+    display: none;
+
+    @media screen and (min-width: $bp--tablet) {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  &__icon-link {
+    height: 32px;
+  }
+
+  &__icon {
+    color: var(--color-primary-accent);
+    width: 32px;
+    height: 32px;
+  }
+
   &__burger {
     background-color: transparent;
     border: none;
     width: 24px;
     height: 24px;
     padding: 0px;
-    fill: var(--color-primary-light);
+    fill: var(--color-primary-main);
 
-    @media screen and (min-width: $bp--desktop) {
+    @media screen and (min-width: $bp--tablet) {
       display: none;
       background: none;
       border: none;

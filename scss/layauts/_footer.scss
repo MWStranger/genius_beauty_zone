@@ -9,17 +9,6 @@
   font-weight: 400;
   color: var(--color-primary-main);
 
-  &::after {
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 247px;
-    height: 152px;
-    bottom: 0px;
-    right: 0px;
-    background-image: url('../images/medicine.webp');
-    content: '';
-  }
-
   &__container {
     display: flex;
     align-items: start;

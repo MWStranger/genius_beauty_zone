@@ -14,71 +14,70 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
-        <div class="header__container">
-          <!-- Navigation -->
-          <nav class="header__nav">
-            <!-- logo and menu -->
-            <a href="/" class="header__logo">
-              <img src="./images/logo.webp" alt="Логотип Beauty Zone" />
-            </a>
-            <ul class="header__menu">
-              <li>
-                <a class="link" href="#intro-section">Про нас</a>
-              </li>
-              <li><a class="link" href="#why-us-section">Чому ми</a></li>
-              <li>
-                <a class="link" href="#services-section">Наші процедури</a>
-              </li>
-              <li><a class="link" href="#conversion-section">Контакти</a></li>
-            </ul>
-          </nav>
-          <!-- Meta info: phone, social icons, burger -->
-          <div class="header__meta">
-            <div class="header__icon-list">
-              <a href="#" class="header__icon-link">
-                <svg
-                  class="footer__adress-icon"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                >
-                  <use href="./images/icons/phone.svg"></use>
-                </svg>
-              </a>
-              <a href="#" class="header__icon-link">
-                <svg
-                  class="footer__adress-icon"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                >
-                  <use href="./images/icons/facebook.svg"></use>
-                </svg>
-              </a>
-              <a href="#" class="header__icon-link">
-                <svg
-                  class="footer__adress-icon"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                >
-                  <use href="./images/icons/instagram.svg"></use>
-                </svg>
-              </a>
-            </div>
-            <button
-              class="header__burger js-action"
-              type="button"
-              data-action="menu"
-            >
-              <svg width="24" height="24">
-                <use href="./images/icons/menu.svg"></use>
+      <div class="container header__container">
+        <!-- Navigation -->
+        <div class="header__logo">
+          <a href="/" class="header__logo-link">
+            <img src="./images/logo.webp" alt="Логотип Beauty Zone" />
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li>
+              <a class="link" href="#intro-section">Про нас</a>
+            </li>
+            <li><a class="link" href="#why-us-section">Чому ми</a></li>
+            <li>
+              <a class="link" href="#services-section">Наші процедури</a>
+            </li>
+            <li><a class="link" href="#conversion-section">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header__meta">
+          <div class="header__icon-list">
+            <a href="#" class="header__icon-link">
+              <svg
+                class="footer__adress-icon"
+                width="32"
+                height="32"
+                fill="currentColor"
+              >
+                <use href="./images/icons/phone.svg"></use>
               </svg>
-            </button>
+            </a>
+            <a href="#" class="header__icon-link">
+              <svg
+                class="footer__adress-icon"
+                width="32"
+                height="32"
+                fill="currentColor"
+              >
+                <use href="./images/icons/facebook.svg"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__icon-link">
+              <svg
+                class="footer__adress-icon"
+                width="32"
+                height="32"
+                fill="currentColor"
+              >
+                <use href="./images/icons/instagram.svg"></use>
+              </svg>
+            </a>
           </div>
-          <!-- Mobile menu toggle -->
-          <!-- <div class="mobile-menu is-hidden">
+          <button
+            class="header__burger js-action"
+            type="button"
+            data-action="menu"
+          >
+            <svg width="24" height="24">
+              <use href="./images/icons/menu.svg"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Mobile menu toggle -->
+        <!-- <div class="mobile-menu is-hidden">
             <button
               class="mobile-menu__btn-close js-action"
               type="button"
@@ -126,24 +125,28 @@
               </li>
             </ul>
           </div> -->
-        </div>
       </div>
     </header>
 
     <main>
       <!-- Hero -->
-      <section class="hero-section">
+      <section class="hero-section section">
         <div class="container hero-section__container">
-          <p>Косметологічна клініка</p>
-          <h1 class="hero-section__title">Beauty Zone</h1>
-          <button type="button" class="button hero-section__button btn-primary">
-            Замовити дзвінок
-          </button>
-          <div class="hero-section__text">
-            <p>
-              Запишись та отримай безкоштовну <br />
-              консультацію нашого косметолога
-            </p>
+          <div class="hero-section__content">
+            <p>Косметологічна клініка</p>
+            <h1 class="hero-section__title">Beauty Zone</h1>
+            <button
+              type="button"
+              class="button hero-section__button btn-primary"
+            >
+              Замовити дзвінок
+            </button>
+            <div class="hero-section__text">
+              <p>
+                Запишись та отримай безкоштовну <br />
+                консультацію нашого косметолога
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -161,11 +164,25 @@
               догляду за шкірою обличчя та тіла.
             </p>
             <p>
-              B <b>Beauty zone</b> ми гарантуємо найвищі стандарти якості та
-              приємний сервіс. Наші косметологічні процедури та препарати
-              допоможуть вам підтримувати свою красу та молодість. <br />
+              B <span class="text-bolt">Beauty zone</span> ми гарантуємо найвищі
+              стандарти якості та приємний сервіс. Наші косметологічні процедури
+              та препарати допоможуть вам підтримувати свою красу та молодість.
+              <br />
               З нами краса назавжди!
             </p>
+            <div class="star-icon star-icon--large">
+              <svg
+                viewBox="0 0 100 100"
+                width="150"
+                height="150"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon
+                  class="star-shape"
+                  points="50,5 58,42 95,50 58,58 50,95 42,58 5,50 42,42"
+                />
+              </svg>
+            </div>
           </div>
           <div class="intro-section__results">
             <div class="intro-section__img-circle">
@@ -279,9 +296,7 @@
       <!-- Services -->
       <section class="services-section section">
         <div class="container services-section__container">
-          <h2 class="services-section__title">
-            Наші <span class="text-brand">процедури</span>
-          </h2>
+          <h2>Наші <span class="text-brand">процедури</span></h2>
           <ul class="services-section__list">
             <li class="services-section__item">
               <img
@@ -289,7 +304,10 @@
                 src="./images/procedure-00.jpg"
                 alt="Маски для обличчя"
               />
-              <h3 class="services-section__text">Маски для обличчя</h3>
+              <h3 class="services-section__text">
+                Маски <br />
+                для обличчя
+              </h3>
             </li>
             <li class="services-section__item">
               <img
@@ -297,7 +315,10 @@
                 src="./images/procedure-01.jpg"
                 alt="Інʼєкційні процедури"
               />
-              <h3 class="services-section__text">Інʼєкційні процедури</h3>
+              <h3 class="services-section__text">
+                Інʼєкційні <br />
+                процедури
+              </h3>
             </li>
             <li class="services-section__item">
               <img
@@ -305,7 +326,10 @@
                 src="./images/procedure-02.jpg"
                 alt="Догляд за шкірою"
               />
-              <h3 class="services-section__text">Догляд за шкірою</h3>
+              <h3 class="services-section__text">
+                Догляд <br />
+                за шкірою
+              </h3>
             </li>
           </ul>
         </div>
@@ -314,9 +338,7 @@
       <!-- Conversion -->
       <section class="conversion-section section">
         <div class="container conversion-section__container">
-          <h2 class="conversion-section__title">
-            Як нас <span class="text-brand">знайти</span>
-          </h2>
+          <h2>Як нас <span class="text-brand">знайти</span></h2>
           <div class="conversion-section__content">
             <iframe
               class="conversion-section__map"

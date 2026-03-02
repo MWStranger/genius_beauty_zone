@@ -6,30 +6,57 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 80px;
+    justify-content: center;
+    @media screen and (min-width: $bp--desktop) {
+      justify-content: space-between;
+    }
   }
 
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
-
+    text-align: center;
     @media screen and (min-width: $bp--tablet) {
       padding: 40px 30px 40px 0px;
       max-width: 600px;
     }
+    @media screen and (min-width: $bp--desktop) {
+      text-align: left;
+    }
 
     h2 {
-      padding-top: 50px;
+      margin-top: 0px;
+      @media screen and (min-width: $bp--tablet) {
+        margin-top: 50px;
+      }
+    }
+
+    .star-icon--large {
+      position: absolute;
+      bottom: -50px;
+      right: 0px;
+      svg {
+        width: 64px;
+        height: 64px;
+        transform: rotate(-25deg);
+        fill: var(--color-secondary-dark);
+      }
+      @media screen and (min-width: $bp--desktop) {
+        display: none;
+      }
     }
   }
 
   &__results {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    min-width: 500px;
-    position: relative;
+    display: none;
+    @media screen and (min-width: $bp--desktop) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      min-width: 500px;
+      position: relative;
+    }
 
     .star-icon {
       position: absolute;
@@ -79,7 +106,7 @@
     overflow: hidden;
     flex-shrink: 0;
 
-    @media screen and (min-width: $bp--tablet) {
+    @media screen and (min-width: $bp--desktop) {
       display: block;
       align-self: flex-start;
     }
@@ -108,13 +135,18 @@
 .intro-section::before {
   content: '';
   position: absolute;
-  top: -150px;
+  top: -50px;
   left: 0px;
   width: 100%;
-  height: 200px;
+  height: 50px;
   background-image: url('../images/wave-alpha.svg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
   z-index: 0;
+
+  @media screen and (min-width: $bp--tablet) {
+    top: -150px;
+    height: 150px;
+  }
 }

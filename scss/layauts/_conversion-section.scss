@@ -2,24 +2,38 @@
 
 /* SERVICES SECTION - секція сайту */
 .conversion-section {
-  &__container {
-    padding-left: 90px;
-    padding-right: 90px;
+  padding-bottom: 0px;
+  @media screen and (min-width: $bp--desktop) {
+    padding-bottom: 40px;
   }
 
-  &__title {
-    text-align: center;
+  &__container {
+    padding: 0px;
+    @media screen and (min-width: $bp--desktop) {
+      padding: 0px 80px;
+    }
   }
 
   &__content {
     display: flex;
-    justify-content: space-between;
-    gap: 32px;
+    flex-direction: column-reverse;
+    gap: 24px;
+    align-items: center;
+    @media screen and (min-width: $bp--desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 32px;
+    }
   }
 
   &__map {
     flex: 1;
+    min-height: 240px;
+    width: 100%;
     @media screen and (min-width: $bp--tablet) {
+      min-height: 480px;
+    }
+    @media screen and (min-width: $bp--desktop) {
       border-radius: 32px;
     }
   }

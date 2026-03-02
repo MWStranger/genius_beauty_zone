@@ -3,9 +3,9 @@
 /* SECTION */
 /* Styles for all sections */
 .section {
-  padding: 0px;
+  padding: 0px 0px 40px 0px;
 
-  @media screen and (min-width: $bp--tablet) {
+  @media screen and (min-width: $bp--desktop) {
     padding-bottom: 96px;
   }
 

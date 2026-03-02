@@ -2,18 +2,10 @@
 
 /* SERVICES SECTION - секція сайту */
 .services-section {
-  &__container {
-    padding-left: 90px;
-    padding-right: 90px;
-  }
-
-  &__title {
-    text-align: center;
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
+    gap: 16px;
   }
 
   &__item {

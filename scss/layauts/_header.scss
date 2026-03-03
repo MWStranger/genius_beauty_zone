@@ -23,9 +23,12 @@
     justify-content: space-between;
     align-items: center;
     @media screen and (min-width: $bp--tablet) {
-      justify-content: space-around;
-      padding: 32px 0px;
+      padding: 32px 64px;
     }
+  }
+
+  &__logo {
+    height: 42px;
   }
 
   &__nav {
@@ -35,16 +38,12 @@
     justify-content: space-between;
   }
 
-  &__logo {
-    height: 42px;
-  }
-
   &__menu {
     display: none;
     @media screen and (min-width: $bp--tablet) {
       display: flex;
       justify-content: space-between;
-      gap: 32px;
+      gap: 16px;
     }
     @media screen and (min-width: $bp--desktop) {
       gap: 64px;

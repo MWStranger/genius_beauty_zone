@@ -6,9 +6,14 @@
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title -->
-    <title>Beauty Zone</title>
+    <title>Beauty 🌺 Zone</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./scss/main.min.css" />
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -71,60 +76,96 @@
             type="button"
             data-action="menu"
           >
-            <svg width="24" height="24">
+            <svg width="32" height="32">
               <use href="./images/icons/menu.svg"></use>
             </svg>
           </button>
         </div>
         <!-- Mobile menu toggle -->
-        <!-- <div class="mobile-menu is-hidden">
-            <button
-              class="mobile-menu__btn-close js-action"
-              type="button"
-              data-action="menu"
-            >
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
+        <div class="mobile-menu is-hidden">
+          <button
+            class="mobile-menu__btn-close js-action"
+            type="button"
+            data-action="menu"
+          >
+            <svg width="32" height="32">
+              <use href="./images/icons/xmark.svg"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__logo">
+            <a href="/" class="mobile-menu__logo-link">
+              <img src="./images/logo.webp" alt="Логотип Beauty Zone" />
+            </a>
+          </div>
+          <div class="mobile-menu__container">
             <ul class="mobile-menu__list">
               <li>
                 <a
-                  class="mobile-menu__link js-action"
+                  class="mobile-menu__link link"
                   data-action="menu"
-                  href="#traditions-section"
-                >
-                  Наші традиції
-                </a>
-              </li>
-              <li>
-                <a
-                  class="mobile-menu__link js-action"
-                  data-action="menu"
-                  href="#chefs-section"
-                >
-                  Шеф-кухарі
-                </a>
-              </li>
-              <li>
-                <a
-                  class="mobile-menu__link js-action"
-                  data-action="menu"
-                  href="#formats-section"
-                  >Формати</a
+                  href="#intro-section"
+                  >Про нас</a
                 >
               </li>
               <li>
                 <a
-                  class="mobile-menu__link js-action"
+                  class="mobile-menu__link link"
                   data-action="menu"
-                  href="#contact-section"
+                  href="#why-us-section"
+                  >Чому ми</a
                 >
-                  Контакти
-                </a>
+              </li>
+              <li>
+                <a
+                  class="mobile-menu__link link"
+                  data-action="menu"
+                  href="#services-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-menu__link link"
+                  data-action="menu"
+                  href="#conversion-section"
+                  >Контакти</a
+                >
               </li>
             </ul>
-          </div> -->
+            <ul class="mobile-menu__icon-list">
+              <a href="#" class="mobile-menu__icon-link">
+                <svg
+                  class="mobile-menu__adress-icon"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                >
+                  <use href="./images/icons/phone.svg"></use>
+                </svg>
+              </a>
+              <a href="#" class="mobile-menu__icon-link">
+                <svg
+                  class="mobile-menu__adress-icon"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                >
+                  <use href="./images/icons/facebook.svg"></use>
+                </svg>
+              </a>
+              <a href="#" class="mobile-menu__icon-link">
+                <svg
+                  class="mobile-menu__adress-icon"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                >
+                  <use href="./images/icons/instagram.svg"></use>
+                </svg>
+              </a>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -426,29 +467,31 @@
         </div>
         <nav class="footer__nav footer__item">
           <ul class="footer__menu">
-            <li><a href="#intro">Про нас</a></li>
-            <li><a href="#why-us">Чому ми</a></li>
-            <li><a href="#services">Наші процедури</a></li>
-            <li><a href="#conversion">Контакти</a></li>
+            <li><a class="footer__link link" href="#intro">Про нас</a></li>
+            <li><a class="footer__link link" href="#why-us">Чому ми</a></li>
+            <li>
+              <a class="footer__link link" href="#services">Наші процедури</a>
+            </li>
+            <li>
+              <a class="footer__link link" href="#conversion">Контакти</a>
+            </li>
           </ul>
         </nav>
         <address class="footer__address footer__item">
           <div class="footer__address-contacts">
             <ul class="footer__address-list">
               <li>
-                <a class="footer__address-link" href="tel:+380960000007"
+                <a class="footer__link link" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
                 >
               </li>
               <li>
-                <a
-                  class="footer__address-link"
-                  href="mailto:beautyzone@gmail.com"
+                <a class="footer__link link" href="mailto:beautyzone@gmail.com"
                   >beautyzone@gmail.com</a
                 >
               </li>
               <li>
-                <a class="footer__address-link" href="#" target="_blank">
+                <a class="footer__link link" href="#" target="_blank">
                   Україна, м. Київ,<br />
                   вул. Тараса Шевченка 5
                 </a>
@@ -466,7 +509,7 @@
                 <use href="./images/icons/phone.svg"></use>
               </svg>
             </a>
-            <a href="#" class="footer__icon-link">
+            <a href="http://facebook.com/" class="footer__icon-link">
               <svg
                 class="footer__adress-icon"
                 width="32"
@@ -476,7 +519,7 @@
                 <use href="./images/icons/facebook.svg"></use>
               </svg>
             </a>
-            <a href="#" class="footer__icon-link">
+            <a href="https://www.instagram.com/" class="footer__icon-link">
               <svg
                 class="footer__adress-icon"
                 width="32"
@@ -489,12 +532,88 @@
           </div>
         </address>
         <div class="footer__copyright footer__item">
-          <a class="footer__copyright-link" href="#" target="_blank">
+          <a class="footer__link link" href="#" target="_blank">
             Політика конфіденційності
           </a>
-          <p class="footer__copyright-text">&copy; 2022 Дані захищені</p>
+          <p class="footer__copyright-text">&copy; 2026 Дані захищені</p>
         </div>
       </div>
     </footer>
+
+    <!-- Background for modal window -->
+    <div class="backdrop is-hidden">
+      <div class="modal-container">
+        <!-- Modal window -->
+        <div class="modal is-hidden">
+          <button
+            class="modal__btn-close js-action"
+            type="button"
+            data-action="modal"
+          >
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h2 class="modal-title">Замовити дзвінок</h2>
+          <p>Залишіть заявку і наш спеціаліст зв'яжеться з Вами!</p>
+          <form name="modal-form" autocomplete="on">
+            <div class="modal__form-field input">
+              <label class="input__label visually-hidden" for="user-name">
+                Введіть ваше ім'я
+              </label>
+              <input
+                class="input__control"
+                id="user-name"
+                type="text"
+                name="user-name"
+                placeholder="Ім'я"
+                required
+              />
+            </div>
+            <div class="modal__form-field input">
+              <label class="input__label visually-hidden" for="user-phone">
+                Введіть ваш номер телефону
+              </label>
+              <input
+                class="input__control"
+                id="user-phone"
+                type="tel"
+                name="user-phone"
+                placeholder="Телефон"
+                pattern="^\+[0-9]{12}$"
+                required
+              />
+            </div>
+            <div class="modal__form-field input">
+              <label class="input__label visually-hidden" for="user-email">
+                Введіть ваш email
+              </label>
+              <input
+                class="input__control"
+                id="user-email"
+                type="email"
+                name="user-email"
+                placeholder="Електронна пошта"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                required
+              />
+            </div>
+            <button class="modal__button button" type="submit">
+              Замовити дзвінок
+            </button>
+            <p class="form-terms">
+              Натискаючи на кнопку я погоджуюсь з<br />
+              <a class="form-terms-link" href="#">
+                політикою конфіденційності
+              </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

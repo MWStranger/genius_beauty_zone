@@ -11,6 +11,8 @@
   color: var(--color-primary-main);
   border: 2px solid var(--color-primary-accent);
   border-radius: 32px;
+  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
 
   @media screen and (min-width: $bp--tablet) {
     font-size: 18px;

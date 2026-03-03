@@ -1,0 +1,9 @@
+/* LINKS */
+.link {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+  transition: color 0.3s ease;
+}
+.link:hover {
+  color: var(--color-primary-accent);
+}

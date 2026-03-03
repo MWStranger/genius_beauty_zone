@@ -28,18 +28,22 @@
     flex: 1;
   }
 
-  &__nav {
-    display: flex;
-    text-align: center;
-
-    @media (min-width: $bp--tablet) {
-      flex-direction: column;
-      text-align: left;
-    }
+  &__link {
+    color: var(--color-primary-main);
+    text-decoration: none;
   }
 
   &__logo {
     flex-grow: 1;
+  }
+
+  &__nav {
+    display: flex;
+    text-align: center;
+    @media (min-width: $bp--tablet) {
+      flex-direction: column;
+      text-align: left;
+    }
   }
 
   &__menu {
@@ -58,7 +62,6 @@
 
   &__address-contacts {
     display: none;
-
     @media (min-width: $bp--tablet) {
       display: flex;
       flex-direction: column;

@@ -1,31 +1,29 @@
 /* IMPORTS */
 /* Correct import structure set up: variables, fonts, base, utilities, sections */
 
-/* utils/_index.scss */
+/* Utils */
 @forward './utils/variables';
-
-/* utils */
 /* Write them first - otherwise SASS won't find the variable, etc.*/
 @use './utils/fonts' as *;
 @use './utils/texts' as *;
 @use './utils/utils' as *;
 
-/* base */
+/* Base */
 @use './base' as *;
 
-/* components */
+/* Components */
 @use './components/buttons' as *;
 @use './components/forms' as *;
 @use './components/inputs' as *;
+@use './components/links' as *;
 // @import './components/cards'; /* CARDS - картки*/
 // @import './components/form-terms'; /* FORM-TERMS - умови форми*/
-// @import './components/links'; /* LNKS - посилання */
 // @import './components/pagination'; /* PAGINATION - пагінація */
 
-// /** sections **/
-// /* main layout styles */
+// /** Sections **/
+// /* Main layout styles */
 @use './layauts/sections' as *;
-// /* extra styles for specific sections */
+// /* Styles for specific sections */
 @use './layauts/header' as *;
 @use './layauts/hero-section' as *;
 @use './layauts/intro-section' as *;
@@ -33,6 +31,7 @@
 @use './layauts/services-section' as *;
 @use './layauts/conversion-section' as *;
 @use './layauts/footer' as *;
-// @import './layauts/mobile-menu'; /* MOBILE MENU - мобільне меню */
+// /* Mobile menu */
+@use './layauts/mobile-menu' as *;
 // @import './layauts/modal'; /* MODALS - модальне вікно */
 // @import './layauts/footer'; /* FOOTER - футер сайту */

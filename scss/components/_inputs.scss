@@ -12,10 +12,12 @@
     width: 240px;
     border: 2px solid var(--color-secondary-weak);
     border-radius: 32px;
+    color: var(--color-primary-main);
     background-color: transparent;
     font-style: 16px;
     line-height: 1.17;
     outline: none;
+    transition: background-color 0.3s ease;
 
     @media screen and (min-width: $bp--tablet) {
       width: 312px;
@@ -23,8 +25,9 @@
     }
 
     &:hover {
-      border: 1px solid var(--color-brand-normal);
+      border: 1px solid var(--color-secondary-weak);
       outline: none;
+      background-color: var(--color-secondary-weak);
     }
 
     &::placeholder {
@@ -34,7 +37,7 @@
     }
 
     &:focus::placeholder {
-      color: var(--color-primary-dark);
+      color: var(--color-primary-main);
     }
   }
 }

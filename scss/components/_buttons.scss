@@ -1,7 +1,7 @@
 @use '../utils' as *;
 
 /* BUTTON */
-/* Button styles */
+/* All button styles */
 .button {
   display: block;
   font-size: 16px;
@@ -24,4 +24,32 @@
   background-color: var(--color-primary-main);
   color: var(--color-primary-dark);
   border: 2px solid var(--color-primary-accent);
+}
+
+/* Carousel button */
+.carousel-button {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  padding: 0px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+  fill: var(--color-primary-dark);
+  transition:
+    background-color 0.3s ease,
+    fill 0.3s ease;
+
+  &.next {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+  }
 }

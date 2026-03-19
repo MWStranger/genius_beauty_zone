@@ -143,7 +143,7 @@
                   <use href="./images/icons/phone.svg"></use>
                 </svg>
               </a>
-              <a href="#" class="mobile-menu__icon-link">
+              <a href="https://facebook.com" class="mobile-menu__icon-link">
                 <svg
                   class="mobile-menu__adress-icon"
                   width="32"
@@ -153,7 +153,7 @@
                   <use href="./images/icons/facebook.svg"></use>
                 </svg>
               </a>
-              <a href="#" class="mobile-menu__icon-link">
+              <a href="https://instagram.com" class="mobile-menu__icon-link">
                 <svg
                   class="mobile-menu__adress-icon"
                   width="32"
@@ -178,7 +178,8 @@
             <h1 class="hero-section__title">Beauty Zone</h1>
             <button
               type="button"
-              class="button hero-section__button btn-primary"
+              class="button hero-section__button btn-primary js-action"
+              data-action="modal"
             >
               Замовити дзвінок
             </button>
@@ -338,7 +339,116 @@
       <section class="services-section section">
         <div class="container services-section__container">
           <h2>Наші <span class="text-brand">процедури</span></h2>
-          <ul class="services-section__list">
+          <div class="slider">
+            <button
+              class="slider__button carousel-button carousel-button-prev"
+              type="button"
+            >
+              <svg width="16" height="16">
+                <use href="./images/icons/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="slider__container swiper-container">
+              <ul class="slider__list swiper-wrapper">
+                <li class="swiper-slide slider__item">
+                  <article class="services-card card--masks">
+                    <img
+                      class="services-card__image"
+                      src="./images/procedure-00.jpg"
+                      alt="Маски для обличчя"
+                    />
+                    <h3 class="services-card__title" lang="uk">
+                      Маски <br />
+                      для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide slider__item">
+                  <article class="services-card card--procedures">
+                    <img
+                      class="services-card__image"
+                      src="./images/procedure-01.jpg"
+                      alt="Інʼєкційні процедури"
+                    />
+                    <h3 class="services-card__title" lang="uk">
+                      Інʼєкційні <br />
+                      процедури
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide slider__item">
+                  <article class="services-card card--masks">
+                    <img
+                      class="services-card__image"
+                      src="./images/procedure-02.jpg"
+                      alt="Догляд за шкірою"
+                    />
+                    <h3 class="services-card__title" lang="uk">
+                      Догляд <br />
+                      за шкірою
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide services-section__item">
+                  <article class="services-card card--masks">
+                    <img
+                      class="services-card__image"
+                      src="./images/procedure-00.jpg"
+                      alt="Маски для обличчя"
+                    />
+                    <h3 class="services-card__title" lang="uk">
+                      Маски <br />
+                      для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide services-section__item">
+                  <article class="services-card card--procedures">
+                    <img
+                      class="services-card__image"
+                      src="./images/procedure-01.jpg"
+                      alt="Інʼєкційні процедури"
+                    />
+                    <h3 class="services-card__title" lang="uk">
+                      Інʼєкційні <br />
+                      процедури
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide services-section__item">
+                  <article class="services-card card--masks">
+                    <img
+                      class="services-card__image"
+                      src="./images/procedure-02.jpg"
+                      alt="Догляд за шкірою"
+                    />
+                    <h3 class="services-card__title" lang="uk">
+                      Догляд <br />
+                      за шкірою
+                    </h3>
+                  </article>
+                </li>
+              </ul>
+              <div class="slider__pagination pagination">
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+              </div>
+            </div>
+            <button
+              class="slider__button carousel-button carousel-button-next next"
+              type="button"
+            >
+              <svg width="16" height="16">
+                <use href="./images/icons/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+
+          <!-- <ul class="services-section__list">
             <li class="services-section__item">
               <img
                 class="services-section__image"
@@ -372,7 +482,7 @@
                 за шкірою
               </h3>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
 
@@ -391,7 +501,7 @@
             ></iframe>
             <form
               class="conversion-section__form call-form"
-              name="conversion-section__form"
+              name="conversion-form"
               autocomplete="on"
             >
               <h2 class="conversion-section__form-title call-form__title">
@@ -540,70 +650,72 @@
       </div>
     </footer>
 
-    <!-- Background for modal window -->
+    <!-- Modal window -->
     <div class="backdrop is-hidden">
-      <div class="modal-container">
-        <!-- Modal window -->
+      <div class="backdrop__container">
         <div class="modal is-hidden">
           <button
-            class="modal__btn-close js-action"
+            class="modal__btn-close modal__btn-close--primary js-action"
             type="button"
             data-action="modal"
           >
-            <svg width="24" height="24">
-              <use href="./images/icons.svg#icon-close"></use>
+            <svg width="32" height="32">
+              <use href="./images/icons/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <h2 class="modal-title">Замовити дзвінок</h2>
-          <p>Залишіть заявку і наш спеціаліст зв'яжеться з Вами!</p>
-          <form name="modal-form" autocomplete="on">
-            <div class="modal__form-field input">
+          <h2 class="modal__title">Замовити дзвінок</h2>
+          <form class="modal__form call-form" name="modal-form" autocomplete="on">
+            <p class="call-form__title">
+              Запишіться <span class="text-brand">безкоштовно</span></br> та отримайте
+              подарунок
+            </p>
+            <div class="call-form__form-field input">
               <label class="input__label visually-hidden" for="user-name">
-                Введіть ваше ім'я
+                Ваше ім'я та прізвище
               </label>
               <input
                 class="input__control"
                 id="user-name"
                 type="text"
                 name="user-name"
-                placeholder="Ім'я"
+                placeholder="Ваше ім'я та прізвище"
                 required
               />
             </div>
-            <div class="modal__form-field input">
+            <div class="call-form__form-field input">
               <label class="input__label visually-hidden" for="user-phone">
-                Введіть ваш номер телефону
+                Ваш номер телефону
               </label>
               <input
                 class="input__control"
                 id="user-phone"
                 type="tel"
                 name="user-phone"
-                placeholder="Телефон"
+                placeholder="Ваш номер телефону"
                 pattern="^\+[0-9]{12}$"
                 required
               />
             </div>
-            <div class="modal__form-field input">
+            <div class="call-form__form-field input">
               <label class="input__label visually-hidden" for="user-email">
-                Введіть ваш email
+                Ваша електронна пошта
               </label>
               <input
                 class="input__control"
                 id="user-email"
                 type="email"
                 name="user-email"
-                placeholder="Електронна пошта"
+                placeholder="Ваша електронна пошта"
                 pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                 required
               />
             </div>
-            <button class="modal__button button" type="submit">
-              Замовити дзвінок
+            <button class="call-form__button button" type="submit">
+              Записатись безкоштовно
             </button>
-            <p class="form-terms">
+            <p class="call-form__terms">
               Натискаючи на кнопку я погоджуюсь з<br />
-              <a class="form-terms-link" href="#">
+              <a class="call-form__terms-link" href="#">
                 політикою конфіденційності
               </a>
             </p>
@@ -613,7 +725,7 @@
     </div>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="./js/formats-slider.js"></script>
+    <script src="./js/services-slider.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

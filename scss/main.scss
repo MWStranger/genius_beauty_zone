@@ -16,9 +16,8 @@
 @use './components/forms' as *;
 @use './components/inputs' as *;
 @use './components/links' as *;
-// @import './components/cards'; /* CARDS - картки*/
-// @import './components/form-terms'; /* FORM-TERMS - умови форми*/
-// @import './components/pagination'; /* PAGINATION - пагінація */
+@use './components/cards' as *;
+@use './components/pagination' as *;
 
 // /** Sections **/
 // /* Main layout styles */
@@ -33,5 +32,5 @@
 @use './layauts/footer' as *;
 // /* Mobile menu */
 @use './layauts/mobile-menu' as *;
-// @import './layauts/modal'; /* MODALS - модальне вікно */
-// @import './layauts/footer'; /* FOOTER - футер сайту */
+// /* Modals */
+@use './layauts/modal' as *;

@@ -1,9 +1,10 @@
-// Блокування скролу сторінки при відкритті модального вікна
+// Blocking page scrolling when opening a modal window
 document.body.classList.add('is-locked');
 document.body.classList.remove('is-locked');
-// Функції для блокування та розблокування скролу сторінки
+// Functions for blocking and unblocking page scroll
 const lockScroll = () => {
-  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+  const scrollBarWidth =
+    window.innerWidth - document.documentElement.clientWidth;
   document.body.style.paddingRight = `${scrollBarWidth}px`;
   document.body.classList.add('is-locked');
 };
@@ -13,8 +14,7 @@ const unlockScroll = () => {
   document.body.classList.remove('is-locked');
 };
 
-
-// Модуль для відкриття/закриття мобільного меню та модального вікна
+// Module for opening/closing the mobile menu and modal window
 const mobileMenu = document.querySelector('.mobile-menu');
 const modal = document.querySelector('.backdrop');
 
@@ -28,7 +28,7 @@ function close(el) {
   el.classList.add('is-hidden');
 }
 
-document.addEventListener('click', (e) => {
+document.addEventListener('click', e => {
   const actionEl = e.target.closest('.js-action');
   if (!actionEl) return;
 
@@ -54,4 +54,3 @@ document.addEventListener('click', (e) => {
     }
   }
 });
-

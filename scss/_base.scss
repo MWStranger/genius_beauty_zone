@@ -19,6 +19,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
+  overflow-x: hidden;
 
   @media screen and (min-width: $bp--tablet) {
     font-size: 18px;

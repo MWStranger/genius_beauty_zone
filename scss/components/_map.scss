@@ -1,0 +1,10 @@
+@use '../utils' as *;
+
+/* Maps styles */
+.map {
+  pointer-events: none;
+}
+
+.map.active {
+  pointer-events: auto;
+}

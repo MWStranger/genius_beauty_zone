@@ -6,10 +6,8 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  inset: 0;
+  box-sizing: border-box;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
@@ -27,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 720px;
     height: 100%;
   }
 }

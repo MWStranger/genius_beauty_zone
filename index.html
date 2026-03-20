@@ -5,8 +5,12 @@
     <meta charset="UTF-8" />
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <!-- Title -->
-    <title>Beauty 🌺 Zone</title>
+    <title>Beauty Zone</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./scss/main.min.css" />
     <!-- Slider -->
@@ -19,159 +23,163 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container header__container">
-        <!-- Navigation -->
-        <div class="header__logo">
-          <a href="/" class="header__logo-link">
-            <img src="./images/logo.webp" alt="Логотип Beauty Zone" />
-          </a>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li>
-              <a class="link" href="#intro-section">Про нас</a>
-            </li>
-            <li><a class="link" href="#why-us-section">Чому ми</a></li>
-            <li>
-              <a class="link" href="#services-section">Наші процедури</a>
-            </li>
-            <li><a class="link" href="#conversion-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <div class="header__meta">
-          <div class="header__icon-list">
-            <a href="#" class="header__icon-link">
-              <svg
-                class="footer__adress-icon"
-                width="32"
-                height="32"
-                fill="currentColor"
-              >
-                <use href="./images/icons/phone.svg"></use>
-              </svg>
-            </a>
-            <a href="#" class="header__icon-link">
-              <svg
-                class="footer__adress-icon"
-                width="32"
-                height="32"
-                fill="currentColor"
-              >
-                <use href="./images/icons/facebook.svg"></use>
-              </svg>
-            </a>
-            <a href="#" class="header__icon-link">
-              <svg
-                class="footer__adress-icon"
-                width="32"
-                height="32"
-                fill="currentColor"
-              >
-                <use href="./images/icons/instagram.svg"></use>
-              </svg>
-            </a>
-          </div>
-          <button
-            class="header__burger js-action"
-            type="button"
-            data-action="menu"
-          >
-            <svg width="32" height="32">
-              <use href="./images/icons/menu.svg"></use>
-            </svg>
-          </button>
-        </div>
-        <!-- Mobile menu toggle -->
-        <div class="mobile-menu is-hidden">
-          <button
-            class="mobile-menu__btn-close js-action"
-            type="button"
-            data-action="menu"
-          >
-            <svg width="32" height="32">
-              <use href="./images/icons/xmark.svg"></use>
-            </svg>
-          </button>
-          <div class="mobile-menu__logo">
-            <a href="/" class="mobile-menu__logo-link">
+      <div class="conteiner">
+        <div class="header__container">
+          <!-- Navigation -->
+          <div class="header__logo">
+            <a href="/" class="header__logo-link">
               <img src="./images/logo.webp" alt="Логотип Beauty Zone" />
             </a>
           </div>
-          <div class="mobile-menu__container">
-            <ul class="mobile-menu__list">
+          <nav class="header__nav">
+            <ul class="header__menu">
               <li>
-                <a
-                  class="mobile-menu__link link"
-                  data-action="menu"
-                  href="#intro-section"
-                  >Про нас</a
-                >
+                <a class="link" href="#intro-section">Про нас</a>
               </li>
+              <li><a class="link" href="#why-us-section">Чому ми</a></li>
               <li>
-                <a
-                  class="mobile-menu__link link"
-                  data-action="menu"
-                  href="#why-us-section"
-                  >Чому ми</a
-                >
+                <a class="link" href="#services-section">Наші процедури</a>
               </li>
-              <li>
-                <a
-                  class="mobile-menu__link link"
-                  data-action="menu"
-                  href="#services-section"
-                  >Наші процедури</a
-                >
-              </li>
-              <li>
-                <a
-                  class="mobile-menu__link link"
-                  data-action="menu"
-                  href="#conversion-section"
-                  >Контакти</a
-                >
-              </li>
+              <li><a class="link" href="#conversion-section">Контакти</a></li>
             </ul>
-            <ul class="mobile-menu__icon-list">
-              <a href="#" class="mobile-menu__icon-link">
+          </nav>
+          <div class="header__meta">
+            <div class="header__icon-list">
+              <a href="#" class="header__icon-link">
                 <svg
-                  class="mobile-menu__adress-icon"
+                  class="footer__adress-icon"
                   width="32"
                   height="32"
                   fill="currentColor"
                 >
-                  <use href="./images/icons/phone.svg"></use>
+                  <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </a>
-              <a href="https://facebook.com" class="mobile-menu__icon-link">
+              <a href="#" class="header__icon-link">
                 <svg
-                  class="mobile-menu__adress-icon"
+                  class="footer__adress-icon"
                   width="32"
                   height="32"
                   fill="currentColor"
                 >
-                  <use href="./images/icons/facebook.svg"></use>
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-              <a href="https://instagram.com" class="mobile-menu__icon-link">
+              <a href="#" class="header__icon-link">
                 <svg
-                  class="mobile-menu__adress-icon"
+                  class="footer__adress-icon"
                   width="32"
                   height="32"
                   fill="currentColor"
                 >
-                  <use href="./images/icons/instagram.svg"></use>
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
-            </ul>
+            </div>
+            <button
+              class="header__burger js-action"
+              type="button"
+              data-action="menu"
+            >
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- Mobile menu toggle -->
+    <div class="mobile-menu is-hidden">
+      <button
+        class="mobile-menu__btn-close js-action"
+        type="button"
+        data-action="menu"
+      >
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-xmark"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__logo">
+        <a href="/" class="mobile-menu__logo-link">
+          <img src="./images/logo.webp" alt="Логотип Beauty Zone" />
+        </a>
+      </div>
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+          <li>
+            <a
+              class="mobile-menu__link link js-action"
+              data-action="menu"
+              href="#intro-section"
+              >Про нас</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu__link link js-action"
+              data-action="menu"
+              href="#why-us-section"
+              >Чому ми</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu__link link js-action"
+              data-action="menu"
+              href="#services-section"
+              >Наші процедури</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-menu__link link js-action"
+              data-action="menu"
+              href="#conversion-section"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__icon-list">
+          <a href="#" class="mobile-menu__icon-link">
+            <svg
+              class="mobile-menu__adress-icon"
+              width="32"
+              height="32"
+              fill="currentColor"
+            >
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </a>
+          <a href="https://facebook.com" class="mobile-menu__icon-link">
+            <svg
+              class="mobile-menu__adress-icon"
+              width="32"
+              height="32"
+              fill="currentColor"
+            >
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="https://instagram.com" class="mobile-menu__icon-link">
+            <svg
+              class="mobile-menu__adress-icon"
+              width="32"
+              height="32"
+              fill="currentColor"
+            >
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main content -->
     <main>
       <!-- Hero -->
-      <section class="hero-section section">
+      <section id="hero-section" class="hero-section section">
         <div class="container hero-section__container">
           <div class="hero-section__content">
             <p>Косметологічна клініка</p>
@@ -194,7 +202,7 @@
       </section>
 
       <!-- Intro -->
-      <section class="intro-section section">
+      <section id="intro-section" class="intro-section section">
         <div class="container intro-section__container">
           <div class="intro-section__content">
             <h2>
@@ -282,7 +290,7 @@
       </section>
 
       <!-- Why us -->
-      <section class="why-us-section section">
+      <section id="why-us-section" class="why-us-section section">
         <div class="container why-us-section__container">
           <h2 class="why-us-section__title">
             Чому люди <br />
@@ -296,7 +304,7 @@
                 width="48"
                 height="48"
               >
-                <use href="./images/icons/science.svg"></use>
+                <use href="./images/icons.svg#icon-science"></use>
               </svg>
               <p>
                 Всі наші косметологи мають вищу медичну освіту та стаж роботи
@@ -310,7 +318,7 @@
                 width="48"
                 height="36"
               >
-                <use href="./images/icons/materials.svg"></use>
+                <use href="./images/icons.svg#icon-materials"></use>
               </svg>
               <p>
                 Використовуємо тільки професійне обладнання та косметику,
@@ -324,7 +332,7 @@
                 width="48"
                 height="48"
               >
-                <use href="./images/icons/crown.svg"></use>
+                <use href="./images/icons.svg#icon-crown"></use>
               </svg>
               <p>
                 Наша мета - підкреслити переваги та приховати недоліки, а не
@@ -336,7 +344,7 @@
       </section>
 
       <!-- Services -->
-      <section class="services-section section">
+      <section id="services-section" class="services-section section">
         <div class="container services-section__container">
           <h2>Наші <span class="text-brand">процедури</span></h2>
           <div class="slider">
@@ -345,7 +353,7 @@
               type="button"
             >
               <svg width="16" height="16">
-                <use href="./images/icons/icons.svg#icon-arrow"></use>
+                <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
             <div class="slider__container swiper-container">
@@ -443,7 +451,7 @@
               type="button"
             >
               <svg width="16" height="16">
-                <use href="./images/icons/icons.svg#icon-arrow"></use>
+                <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
@@ -487,12 +495,12 @@
       </section>
 
       <!-- Conversion -->
-      <section class="conversion-section section">
+      <section id="conversion-section" class="conversion-section section">
         <div class="container conversion-section__container">
           <h2>Як нас <span class="text-brand">знайти</span></h2>
           <div class="conversion-section__content">
             <iframe
-              class="conversion-section__map"
+              class="conversion-section__map map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.5191147494193!2d30.77290462784853!3d50.505907198937884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2ses!4v1770926167088!5m2!1suk!2ses"
               style="border: 0"
               allowfullscreen=""
@@ -577,13 +585,21 @@
         </div>
         <nav class="footer__nav footer__item">
           <ul class="footer__menu">
-            <li><a class="footer__link link" href="#intro">Про нас</a></li>
-            <li><a class="footer__link link" href="#why-us">Чому ми</a></li>
             <li>
-              <a class="footer__link link" href="#services">Наші процедури</a>
+              <a class="footer__link link" href="#intro-section">Про нас</a>
             </li>
             <li>
-              <a class="footer__link link" href="#conversion">Контакти</a>
+              <a class="footer__link link" href="#why-us-section">Чому ми</a>
+            </li>
+            <li>
+              <a class="footer__link link" href="#services-section"
+                >Наші процедури</a
+              >
+            </li>
+            <li>
+              <a class="footer__link link" href="#conversion-section"
+                >Контакти</a
+              >
             </li>
           </ul>
         </nav>
@@ -616,7 +632,7 @@
                 height="32"
                 fill="currentColor"
               >
-                <use href="./images/icons/phone.svg"></use>
+                <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </a>
             <a href="http://facebook.com/" class="footer__icon-link">
@@ -626,7 +642,7 @@
                 height="32"
                 fill="currentColor"
               >
-                <use href="./images/icons/facebook.svg"></use>
+                <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
             <a href="https://www.instagram.com/" class="footer__icon-link">
@@ -636,7 +652,7 @@
                 height="32"
                 fill="currentColor"
               >
-                <use href="./images/icons/instagram.svg"></use>
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </div>
@@ -659,15 +675,19 @@
             type="button"
             data-action="modal"
           >
-            <svg width="32" height="32">
-              <use href="./images/icons/icons.svg#icon-close"></use>
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
           <h2 class="modal__title">Замовити дзвінок</h2>
-          <form class="modal__form call-form" name="modal-form" autocomplete="on">
+          <form
+            class="modal__form call-form"
+            name="modal-form"
+            autocomplete="on"
+          >
             <p class="call-form__title">
-              Запишіться <span class="text-brand">безкоштовно</span></br> та отримайте
-              подарунок
+              Запишіться <span class="text-brand">безкоштовно</span><br />
+              та отримайте подарунок
             </p>
             <div class="call-form__form-field input">
               <label class="input__label visually-hidden" for="user-name">
@@ -723,9 +743,11 @@
         </div>
       </div>
     </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/services-slider.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/map.js"></script>
   </body>
 </html>
